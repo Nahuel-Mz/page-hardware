@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #01095b;
+  height: 100px;
+}
+
+.img-logo {
+  width: 100px;
+  /* border: 1px solid white; */
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  width: 0;
+  height: 4;
+  background-color: white;
+  position: absolute;
+  bottom: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+
+a:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+a:hover {
+  text-decoration: underline 3px;
+  padding-top: 5px;
+}
+
+/* estilos body */
+
+body {
+  background: rgb(157, 63, 251);
+  background: radial-gradient(
+    circle,
+    rgba(157, 63, 251, 1) 0%,
+    rgba(70, 77, 252, 1) 100%
+  );
+}
+
+main {
+  height: 100px;
+}
+
+/* estilando footer */
+
+footer {
+  display: flex;
+  height: 100px;
+  margin: 800px 0px 0px 0px;
+  background-color: #01095b;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.list {
+  display: flex;
+  padding: 0px 10px;
+}
+
+.item-footer {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+#copy {
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* estilando formulario */
+
+.fm {
+  display: flex;
+
+  justify-content: center;
+  /* background: rgb(63, 142, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 142, 251, 1) 36%,
+    rgba(252, 70, 242, 1) 67%
+  ); */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  color: white;
+  margin-top: 100px;
+}
+
+form,
+label {
+  padding: 10px;
+  font-weight: bold;
+  background: rgb(63, 142, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 142, 251, 1) 36%,
+    rgba(252, 70, 242, 1) 67%
+  );
+  /* background-color: rgb(65, 65, 65); */
+}
+
+form,
+input {
+  height: 500px;
+  border-radius: 1rem;
+  text-align: center;
+  border: 5px solid rgb(62, 55, 55);
+}
+
+#boton {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#boton:hover {
+  background: rgb(63, 142, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 142, 251, 1) 0%,
+    rgba(70, 252, 210, 1) 45%
+  );
+}
+
+::placeholder {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}

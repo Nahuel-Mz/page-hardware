@@ -162,3 +162,33 @@ input {
   text-transform: uppercase;
   color: black;
 }
+
+.link-a {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.wp {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  left: 94%;
+  bottom: 100px;
+}
+
+.link-a::after {
+  content: "";
+  width: 0;
+  height: 4;
+  background-color: white;
+  position: absolute;
+  bottom: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+
+.link-a:hover::after {
+  width: 100%;
+  right: 0;
+}
